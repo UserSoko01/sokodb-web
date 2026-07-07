@@ -4,6 +4,7 @@ import { TrustStrip } from "@/components/sections/TrustStrip";
 import { ServicesPreview } from "@/components/sections/ServicesPreview";
 import { BenefitsSection } from "@/components/sections/BenefisSections";
 import { ProcessSection } from "@/components/sections/ProcessSection";
+import { FinalCTA } from "@/components/sections/FinalCTA";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <ServicesPreview />
       <BenefitsSection />
       <ProcessSection />
+      <FinalCTA />
     </>
   );
 }
