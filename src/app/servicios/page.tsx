@@ -1,12 +1,26 @@
+import type { Metadata } from "next";
+import { CapabilitiesSection } from "@/components/sections/CapabilitiesSection";
+import { FinalCTA } from "@/components/sections/FinalCTA";
+import { ProcessSection } from "@/components/sections/ProcessSection";
+import { ServicesGrid } from "@/components/sections/ServicesGrid";
+import { ServicesHero } from "@/components/sections/ServicesHero";
+import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
+
+export const metadata: Metadata = {
+  title: "Servicios",
+  description:
+    "Servicios especializados de SokoDB en bases de datos, analítica, soluciones empresariales y desarrollo de software a la medida.",
+};
+
 export default function ServiciosPage() {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-24">
-      <p className="text-sm font-semibold text-[#F9423A]">
-        Soluciones tecnológicas para empresas
-      </p>
-      <h1 className="mt-4 text-5xl font-black tracking-tight">
-        Servicios especializados para impulsar tu operación
-      </h1>
-    </section>
+    <>
+      <ServicesHero />
+      <ServicesGrid />
+      <CapabilitiesSection />
+      <WhyChooseUs />
+      <ProcessSection />
+      <FinalCTA />
+    </>
   );
 }
