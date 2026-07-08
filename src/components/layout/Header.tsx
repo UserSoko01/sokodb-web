@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BriefcaseBusiness, Mail, MapPin, Phone } from "lucide-react";
+//import { BriefcaseBusiness } from "lucide-react";
 import { navigation, mainCTA } from "@/content/navigation";
 
 export function Header() {
@@ -24,8 +24,6 @@ export function Header() {
 
         <div className="hidden items-center gap-5 md:flex">
           <div className="flex items-center gap-3 text-black">
-            <BriefcaseBusiness className="h-4 w-4" />
-            <BriefcaseBusiness className="h-4 w-4" />
           </div>
 
           <Link
