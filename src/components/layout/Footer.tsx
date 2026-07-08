@@ -1,14 +1,21 @@
 import Link from "next/link";
 import { BriefcaseBusiness, Mail, MapPin, Phone} from "lucide-react";
 import { navigation } from "@/content/navigation";
+import Image from "next/image";
 
 export function Footer() {
   return (
     <footer className="bg-black text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-14 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div>
-          <Link href="/" className="text-2xl font-black tracking-[0.18em]">
-            SOKO DB
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/brand/sokodb-logo-light.svg"
+              alt="SokoDB"
+              width={120}
+              height={36}
+              className="h-6 w-auto"
+            />
           </Link>
 
           <p className="mt-5 max-w-sm text-sm leading-6 text-white/65">
