@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
 import { AboutHero } from "@/components/sections/AboutHero";
+import { CompanyIntro } from "@/components/sections/CompanyIntro";
+import { DifferentiatorsSection } from "@/components/sections/DifferentiatorsSection";
+import { FinalCTA } from "@/components/sections/FinalCTA";
+import { TechnologyExperience } from "@/components/sections/TechnologyExperience";
+import { ValuesGrid } from "@/components/sections/ValuesGrid";
 
 
 export const metadata: Metadata = {
@@ -11,7 +16,12 @@ export const metadata: Metadata = {
 export default function NosotrosPage() {
   return (
     <>
-      <AboutHero />  
+      <AboutHero />
+      <CompanyIntro />
+      <DifferentiatorsSection />  
+      <TechnologyExperience />
+      <ValuesGrid />
+      <FinalCTA />
     </>
   );
 }
