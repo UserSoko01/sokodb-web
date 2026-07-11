@@ -12,9 +12,10 @@ export function Footer() {
             <Image
               src="/brand/sokodb-logo-light.svg"
               alt="SokoDB"
-              width={120}
-              height={36}
-              className="h-6 w-auto"
+              width={150}
+              height={48}
+              priority
+              className="h-10 w-auto"
             />
           </Link>
 
