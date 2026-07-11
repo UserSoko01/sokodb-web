@@ -1,7 +1,15 @@
+import Image from "next/image";
 import Link from "next/link";
-//import { BriefcaseBusiness } from "lucide-react";
+import { Menu } from "lucide-react";
 import { navigation, mainCTA } from "@/content/navigation";
-import Image from "next/image"; 
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+  SheetClose,
+} from "@/components/ui/sheet";
 
 export function Header() {
   return (
@@ -31,15 +39,75 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-5 md:flex">
-          <div className="flex items-center gap-3 text-black">
-          </div>
-
           <Link
             href={mainCTA.href}
             className="rounded-xl bg-[#F9423A] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#D92E27]"
           >
             {mainCTA.label}
           </Link>
+        </div>
+
+        <div className="md:hidden">
+          <Sheet>
+            <SheetTrigger asChild>
+              <button
+                type="button"
+                aria-label="Abrir menú"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-neutral-200 bg-white text-black transition-colors hover:border-[#F9423A] hover:text-[#F9423A]"
+              >
+                <Menu className="h-5 w-5" />
+              </button>
+            </SheetTrigger>
+
+            <SheetContent side="right" className="w-[320px] border-neutral-200 p-0">
+              <SheetHeader className="border-b border-neutral-200 px-6 py-5 text-left">
+                <SheetTitle>
+                  <Link href="/" className="flex items-center">
+                    <Image
+                      src="/brand/sokodb-logo-dark.svg"
+                      alt="SokoDB"
+                      width={120}
+                      height={36}
+                      className="h-7 w-auto"
+                    />
+                  </Link>
+                </SheetTitle>
+              </SheetHeader>
+
+              <div className="flex h-full flex-col px-6 py-6">
+                <nav className="grid gap-2">
+                  {navigation.map((item) => (
+                    <SheetClose asChild key={item.href}>
+                      <Link
+                        href={item.href}
+                        className="rounded-2xl px-4 py-4 text-base font-semibold text-black transition-colors hover:bg-neutral-100 hover:text-[#F9423A]"
+                      >
+                        {item.label}
+                      </Link>
+                    </SheetClose>
+                  ))}
+                </nav>
+
+                <div className="mt-8 border-t border-neutral-200 pt-6">
+                  <SheetClose asChild>
+                    <Link
+                      href={mainCTA.href}
+                      className="inline-flex w-full items-center justify-center rounded-xl bg-[#F9423A] px-6 py-4 text-sm font-semibold text-white transition-colors hover:bg-[#D92E27]"
+                    >
+                      {mainCTA.label}
+                    </Link>
+                  </SheetClose>
+                </div>
+
+                <div className="mt-8 rounded-3xl bg-black p-5 text-white">
+                  <p className="text-sm text-white/60">SokoDB</p>
+                  <p className="mt-2 text-lg font-black">
+                    Tecnología confiable para empresas que necesitan operar mejor.
+                  </p>
+                </div>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </header>
