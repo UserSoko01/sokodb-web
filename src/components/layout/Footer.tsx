@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { BriefcaseBusiness, Mail, MapPin, Phone} from "lucide-react";
+import { Mail, MapPin, Phone} from "lucide-react";
 import { navigation } from "@/content/navigation";
 import Image from "next/image";
 
@@ -24,8 +24,7 @@ export function Footer() {
           </p>
 
           <div className="mt-6 flex gap-4 text-white/80">
-            <BriefcaseBusiness className="h-5 w-5" />
-            <BriefcaseBusiness className="h-5 w-5" />
+            
           </div>
         </div>
 
