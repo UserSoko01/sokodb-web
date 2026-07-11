@@ -11,10 +11,10 @@ export function Header() {
           <Image
             src="/brand/sokodb-logo-dark.svg"
             alt="SokoDB"
-            width={120}
-            height={36}
+            width={150}
+            height={48}
             priority
-            className="h-6 w-auto"
+            className="h-10 w-auto"
           />
         </Link>
 
