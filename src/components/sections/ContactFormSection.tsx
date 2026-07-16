@@ -6,6 +6,7 @@ import {
   sendContactMessage,
   type ContactFormState,
 } from "@/app/actions/contact";
+import Link from "next/link"
 
 
 const serviceOptions = [
@@ -158,7 +159,14 @@ export function ContactFormSection() {
                 className="mt-1 h-4 w-4 accent-[#F9423A]"
               />
               <span>
-                He leído y acepto el aviso de privacidad.
+                He leído y acepto el{" "}
+                <Link
+                  href="/aviso-de-privacidad"
+                  className="font-semibold text-[#F9423A] underline-offset-4 hover:underline"
+                >
+                  aviso de privacidad
+                </Link>
+                .
               </span>
             </label>
 

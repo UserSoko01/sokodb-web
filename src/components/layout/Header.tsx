@@ -13,6 +13,8 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { socialLinks } from "@/content/social";
+import { SocialIcon } from "../shared/SocialIcon";
 
 function isActivePath(pathname: string, href: string) {
   if (href === "/") {
@@ -60,6 +62,21 @@ export function Header() {
             );
           })}
         </nav>
+
+        <div className="hidden items-center gap-2 md:flex">
+          {socialLinks.map((social) => (
+            <a
+              key={social.label}
+              href={social.href}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={social.label}
+              className="flex h-9 w-9 items-center justify-center rounded-xl border border-neutral-200 text-black transition-colors hover:border-[#F9423A] hover:text-[#F9423A]"
+            >
+              <SocialIcon name={social.icon} className="h-3 w-3" />
+            </a>
+          ))}
+        </div>
 
         <div className="hidden items-center gap-5 md:flex">
           <Link
@@ -118,6 +135,21 @@ export function Header() {
                     );
                   })}
                 </nav>
+
+                <div className="mt-6 flex items-center gap-3">
+                  {socialLinks.map((social) => (
+                    <a
+                      key={social.label}
+                      href={social.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={social.label}
+                      className="flex h-11 w-11 items-center justify-center rounded-xl border border-neutral-200 text-black transition-colors hover:border-[#F9423A] hover:text-[#F9423A]"
+                    >
+                      <SocialIcon name={social.icon} className="h-5 w-5" />
+                    </a>
+                  ))}
+                </div>
 
                 <div className="mt-8 border-t border-neutral-200 pt-6">
                   <SheetClose asChild>

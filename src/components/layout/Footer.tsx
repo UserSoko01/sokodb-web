@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Mail, MapPin, Phone} from "lucide-react";
 import { navigation } from "@/content/navigation";
 import Image from "next/image";
+import { socialLinks } from "@/content/social";
+import { SocialIcon } from "@/components/shared/SocialIcon";
 
 export function Footer() {
   return (
@@ -25,7 +27,20 @@ export function Footer() {
           </p>
 
           <div className="mt-6 flex gap-4 text-white/80">
-            
+            <div className="mt-6 flex gap-3 text-white/80">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={social.label}
+                  className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 text-white/70 transition-colors hover:border-[#F9423A] hover:text-[#F9423A]"
+                >
+                  <SocialIcon name={social.icon} className="h-5 w-5" />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
 
