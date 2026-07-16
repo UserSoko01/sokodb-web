@@ -1,61 +1,54 @@
 import {
   BarChart3,
-  Blocks,
   BriefcaseBusiness,
   Code2,
   Database,
+  Headphones,
   Network,
   Server,
-  Waypoints,
 } from "lucide-react";
 
 export const services = [
   {
-    title: "Data Analytics / Power BI",
+    title: "Consultoría de Base de Datos",
     description:
-      "Transformamos tus datos en información clara, visual y accionable para mejorar la toma de decisiones.",
-    icon: BarChart3,
-  },
-  {
-    title: "Soluciones empresariales",
-    description:
-      "Implementamos soluciones tecnológicas orientadas a optimizar procesos, integrar áreas y mejorar la eficiencia operativa.",
-    icon: BriefcaseBusiness,
-  },
-  {
-    title: "Consultoría en bases de datos",
-    description:
-      "Diagnosticamos, diseñamos y optimizamos entornos de bases de datos para mejorar rendimiento, disponibilidad y seguridad.",
+      "Implementamos, migramos, diseñamos y optimizamos plataformas de datos con alta disponibilidad, respaldo, monitoreo y performance tuning.",
     icon: Database,
   },
   {
-    title: "Desarrollo de software a la medida",
+    title: "Servicios Administrados",
     description:
-      "Creamos aplicaciones personalizadas alineadas a los procesos, objetivos y necesidades específicas de tu organización.",
+      "Supervisamos, mantenemos y optimizamos bases de datos mediante soporte especializado, esquemas 5×8 o 7×24, bolsa de horas o proyecto fijo.",
+    icon: Headphones,
+  },
+  {
+    title: "Desarrollo, Integración y Automatización",
+    description:
+      "Creamos aplicaciones, APIs, microservicios, integraciones y automatizaciones para modernizar procesos críticos de negocio.",
     icon: Code2,
   },
   {
-    title: "Servicios Oracle",
+    title: "Data Analytics & Management",
     description:
-      "Brindamos soporte, administración, optimización e implementación de soluciones sobre tecnologías Oracle.",
-    icon: Server,
+      "Convertimos datos en información útil para mejorar la toma de decisiones mediante gestión, análisis, reportes e indicadores empresariales.",
+    icon: BarChart3,
   },
   {
-    title: "EDB / PostgreSQL",
+    title: "Middleware, Cloud e Integración",
     description:
-      "Implementamos y administramos soluciones basadas en PostgreSQL y EDB para entornos modernos y de alto desempeño.",
-    icon: Waypoints,
-  },
-  {
-    title: "Greenplum",
-    description:
-      "Apoyamos soluciones de almacenamiento, procesamiento y analítica para grandes volúmenes de información.",
+      "Apoyamos proyectos de integración con tecnologías como Oracle Middleware, Oracle Cloud Platform, MuleSoft y arquitecturas empresariales.",
     icon: Network,
   },
   {
-    title: "ERP",
+    title: "Equipo de Cómputo Empresarial",
     description:
-      "Integramos y desarrollamos soluciones empresariales para mejorar la gestión, trazabilidad y control de procesos internos.",
-    icon: Blocks,
+      "Suministramos infraestructura empresarial, servidores, almacenamiento, redes, conectividad y equipos de oficina de marcas líderes.",
+    icon: Server,
+  },
+  {
+    title: "Automatización e IA Empresarial",
+    description:
+      "Integramos soluciones de automatización inteligente, asistentes corporativos, clasificación de datos y extracción de información.",
+    icon: BriefcaseBusiness,
   },
 ];
