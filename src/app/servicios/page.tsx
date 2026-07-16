@@ -5,6 +5,8 @@ import { ProcessSection } from "@/components/sections/ProcessSection";
 import { ServicesGrid } from "@/components/sections/ServicesGrid";
 import { ServicesHero } from "@/components/sections/ServicesHero";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
+import { ManagedServicesSection } from "@/components/sections/ManagedServicesSection";
+import { SupportedEnginesSection } from "@/components/sections/SupportedEnginesSection";
 
 export const metadata: Metadata = {
   title: "Servicios",
@@ -17,6 +19,8 @@ export default function ServiciosPage() {
     <>
       <ServicesHero />
       <ServicesGrid />
+      <SupportedEnginesSection />
+      <ManagedServicesSection />
       <CapabilitiesSection />
       <WhyChooseUs />
       <ProcessSection />
