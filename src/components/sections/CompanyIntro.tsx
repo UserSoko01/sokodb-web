@@ -1,12 +1,12 @@
 import { CheckCircle2 } from "lucide-react";
 
 const points = [
-  "Consultoría especializada en bases de datos",
-  "Desarrollo de software a la medida",
-  "Soluciones empresariales escalables",
-  "Analítica de datos para toma de decisiones",
-  "Atención ágil y cercana",
-  "Soporte técnico confiable",
+  "Consultoría especializada en plataformas de datos",
+  "Modernización de ambientes empresariales",
+  "Alianzas tecnológicas con IBM, Oracle y EDB",
+  "Especialistas en PostgreSQL, Oracle, SQL Server, MySQL e Informix",
+  "Soluciones seguras, escalables y de alto desempeño",
+  "Acompañamiento técnico cercano y especializado",
 ];
 
 export function CompanyIntro() {
@@ -25,17 +25,16 @@ export function CompanyIntro() {
 
         <div>
           <p className="text-lg leading-8 text-neutral-600">
-            SokoDB es una consultora tecnológica especializada en bases de
-            datos, desarrollo de software y soluciones empresariales. Nuestro
-            propósito es ayudar a las organizaciones a mejorar su operación
-            mediante tecnología confiable, procesos más eficientes y sistemas
-            preparados para crecer.
+            SokoDB es una consultora especializada en tecnologías de la información,
+            plataformas de datos, integración tecnológica y soluciones empresariales.
+            Nuestro propósito es ayudar a las organizaciones a fortalecer su operación,
+            modernizar sus ambientes tecnológicos y maximizar el valor de su información.
           </p>
 
           <p className="mt-5 text-lg leading-8 text-neutral-600">
-            Trabajamos con empresas que necesitan información disponible, segura
-            y accesible para tomar mejores decisiones, reducir riesgos
-            operativos y mantener la continuidad de sus servicios.
+            Trabajamos con empresas que requieren datos disponibles, seguros y
+            confiables para acelerar su transformación digital, mejorar la toma de
+            decisiones y mantener la continuidad de sus servicios críticos.
           </p>
 
           <div className="mt-8 grid gap-3 sm:grid-cols-2">

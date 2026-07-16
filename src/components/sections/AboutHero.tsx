@@ -3,16 +3,16 @@ import { ArrowRight, Database, ShieldCheck, Users } from "lucide-react";
 
 const metrics = [
   {
-    value: "+7",
-    label: "años de experiencia",
-  },
-  {
     value: "2017",
-    label: "inicio de trayectoria",
+    label: "trayectoria en tecnología empresarial",
   },
   {
-    value: "B2B",
-    label: "tecnología empresarial",
+    value: "IBM   Oracle  EDB",
+    label: "alianzas y ecosistemas tecnológicos",
+  },
+  {
+    value: "BD",
+    label: "especialistas en plataformas de datos",
   },
 ];
 
@@ -24,7 +24,7 @@ export function AboutHero() {
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr] lg:py-28">
         <div>
           <p className="text-sm font-semibold text-[#F9423A]">
-            Tu aliado en tecnología empresarial
+            Consultoría especializada en tecnologías de la información
           </p>
 
           <h1 className="mt-5 text-4xl font-black leading-tight tracking-tight text-black md:text-6xl">
@@ -32,16 +32,16 @@ export function AboutHero() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-neutral-600">
-            En SokoDB ayudamos a las empresas a transformar su operación a
-            través de la gestión avanzada de bases de datos, el desarrollo de
-            software a la medida y soluciones tecnológicas diseñadas para
-            generar eficiencia, seguridad y crecimiento.
+            En SokoDB ayudamos a organizaciones de diversos sectores a fortalecer,
+            modernizar y optimizar sus plataformas de datos mediante consultoría
+            especializada, integración tecnológica y soluciones empresariales seguras,
+            escalables y de alto desempeño.
           </p>
 
           <p className="mt-4 max-w-2xl text-lg leading-8 text-neutral-600">
-            Desde 2017 combinamos experiencia técnica, atención cercana y
-            tecnologías confiables para entregar soluciones robustas, escalables
-            y alineadas a las necesidades reales de cada organización.
+            Desde 2017 combinamos experiencia técnica, atención cercana y alianzas
+            estratégicas con líderes tecnológicos como IBM, Oracle y EDB para entregar
+            soluciones alineadas a las necesidades reales de cada organización.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -102,11 +102,10 @@ export function AboutHero() {
                     <ShieldCheck className="mt-1 h-6 w-6 shrink-0 text-[#F9423A]" />
                     <div>
                       <h3 className="font-black text-black">
-                        Tecnología confiable
+                        Plataformas de datos confiables
                       </h3>
                       <p className="mt-1 text-sm leading-6 text-neutral-600">
-                        Soluciones seguras, estables y preparadas para entornos
-                        empresariales.
+                        Diseño, implementación, optimización y soporte para entornos de datos seguros, escalables y de alto desempeño.
                       </p>
                     </div>
                   </div>
@@ -117,11 +116,10 @@ export function AboutHero() {
                     <Users className="mt-1 h-6 w-6 shrink-0 text-[#F9423A]" />
                     <div>
                       <h3 className="font-black text-black">
-                        Atención cercana
+                        Especialistas certificados
                       </h3>
                       <p className="mt-1 text-sm leading-6 text-neutral-600">
-                        Comunicación clara, acompañamiento técnico y enfoque en
-                        resultados reales.
+                        Experiencia en tecnologías como PostgreSQL, Oracle, SQL Server, MySQL, Informix, EDB y otros motores empresariales.
                       </p>
                     </div>
                   </div>
@@ -130,8 +128,7 @@ export function AboutHero() {
                 <div className="rounded-2xl bg-black p-5 text-white">
                   <p className="text-sm text-white/60">Propósito</p>
                   <p className="mt-2 text-xl font-black">
-                    Actualizar el mundo digital de las empresas con soluciones
-                    útiles y escalables.
+                    Modernizar plataformas, integrar sistemas y maximizar el valor de la información empresarial.
                   </p>
                 </div>
               </div>

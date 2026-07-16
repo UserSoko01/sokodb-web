@@ -1,16 +1,21 @@
 import { BarChart3, Code2, Database, Layers3, Server } from "lucide-react";
 
 const technologies = [
+  "IBM",
   "Oracle",
-  "PostgreSQL",
   "EDB",
+  "PostgreSQL",
+  "SQL Server",
+  "MySQL",
+  "Informix",
   "Greenplum",
-  "Power BI",
-  "Desarrollo de software",
-  "Soluciones empresariales",
-  "Integración de sistemas",
-  "Optimización de bases de datos",
-  "Analítica de datos",
+  "DB2",
+  "MuleSoft",
+  "Oracle WebLogic",
+  "Oracle SOA Suite",
+  "Oracle Cloud Infrastructure",
+  "Data Analytics",
+  "Automatización empresarial",
 ];
 
 const areas = [
@@ -57,15 +62,15 @@ export function TechnologyExperience() {
 
           <p className="mt-6 text-lg leading-8 text-neutral-600">
             A lo largo de nuestra trayectoria hemos trabajado con tecnologías y
-            ecosistemas orientados a bases de datos, analítica, desarrollo e
-            infraestructura empresarial.
+            ecosistemas orientados a plataformas de datos, integración, automatización,
+            middleware, analítica e infraestructura empresarial.
           </p>
 
           <div className="mt-8 rounded-3xl bg-black p-6 text-white">
             <Layers3 className="h-8 w-8 text-[#F9423A]" />
             <p className="mt-4 text-xl font-black">
-              No solo implementamos tecnología: entendemos el contexto del
-              negocio y construimos soluciones sostenibles.
+              Entendemos el contexto del negocio y construimos soluciones sostenibles
+              sobre tecnologías empresariales líderes.
             </p>
           </div>
         </div>
