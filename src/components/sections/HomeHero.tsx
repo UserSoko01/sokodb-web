@@ -9,18 +9,17 @@ export function HomeHero() {
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[0.85fr_1.15fr] lg:py-28">
         <div>
           <p className="text-sm font-semibold text-[#F9423A]">
-            Tu aliado en tecnología empresarial
+            Soluciones y consultoría especializada en TI
           </p>
 
           <h1 className="mt-5 text-4xl font-black leading-tight tracking-tight text-black md:text-6xl">
-            Eficiencia y optimización para la gestión avanzada de bases de datos
-            y desarrollo de software
+            Fortalecemos tus plataformas de datos, integración y operación tecnológica
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-neutral-600">
-            Impulsamos a las empresas con tecnología confiable, soluciones a la
-            medida y un enfoque en resultados. Datos seguros, procesos ágiles y
-            soluciones que escalan con tu negocio.
+            Ayudamos a organizaciones de diversos sectores a modernizar sus plataformas
+            de datos, integrar sistemas, automatizar procesos y mejorar la continuidad
+            operativa mediante soluciones seguras, escalables y de alto desempeño.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">

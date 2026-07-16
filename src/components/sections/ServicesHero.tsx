@@ -3,18 +3,18 @@ import { ArrowRight, BarChart3, Database, ServerCog } from "lucide-react";
 
 const heroCards = [
   {
-    title: "Bases de datos",
-    description: "Optimización, administración y soporte especializado.",
+    title: "Plataformas de datos",
+    description: "Consultoría, migraciones, alta disponibilidad, monitoreo y performance.",
     icon: Database,
   },
   {
-    title: "Analítica",
-    description: "Información clara para tomar mejores decisiones.",
+    title: "Integración y automatización",
+    description: "APIs, microservicios, procesos CORE, middleware e IA empresarial.",
     icon: BarChart3,
   },
   {
-    title: "Soluciones empresariales",
-    description: "Tecnología alineada a procesos reales de negocio.",
+    title: "Infraestructura empresarial",
+    description: "Servidores, almacenamiento, redes, conectividad y equipo de cómputo.",
     icon: ServerCog,
   },
 ];
@@ -27,17 +27,17 @@ export function ServicesHero() {
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[0.9fr_1.1fr] lg:py-28">
         <div>
           <p className="text-sm font-semibold text-[#F9423A]">
-            Soluciones tecnológicas para empresas
+            Portafolio de soluciones SokoDB
           </p>
 
           <h1 className="mt-5 text-4xl font-black leading-tight tracking-tight text-black md:text-6xl">
-            Servicios especializados para impulsar tu operación
+            Consultoría, servicios administrados, integración e infraestructura para tu operación
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-neutral-600">
-            Diseñamos, implementamos y optimizamos soluciones en bases de datos,
-            analítica, automatización y desarrollo de software a la medida para
-            empresas que buscan eficiencia, seguridad y crecimiento.
+            Diseñamos, implementamos y optimizamos soluciones de datos, automatización,
+            integración, analítica e infraestructura empresarial para organizaciones que
+            requieren seguridad, escalabilidad, continuidad y alto desempeño.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
