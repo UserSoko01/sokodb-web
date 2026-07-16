@@ -10,14 +10,13 @@ import Link from "next/link"
 
 
 const serviceOptions = [
-  "Data Analytics / Power BI",
-  "Soluciones empresariales",
-  "Consultoría en bases de datos",
-  "Desarrollo de software a la medida",
-  "Servicios Oracle",
-  "EDB / PostgreSQL",
-  "Greenplum",
-  "ERP",
+  "Consultoría de Base de Datos",
+  "Servicios Administrados",
+  "Desarrollo, Integración y Automatización",
+  "Data Analytics & Management",
+  "Middleware, Cloud e Integración",
+  "Equipo de Cómputo Empresarial",
+  "Automatización e IA Empresarial",
   "Otro",
 ];
 
