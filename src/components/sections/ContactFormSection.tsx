@@ -62,8 +62,21 @@ export function ContactFormSection() {
 
         <form
           action={formAction}
-          className="rounded-[2rem] border border-neutral-200 bg-neutral-50 p-5 shadow-[0_24px_70px_rgba(0,0,0,0.08)]"
+          className="relative rounded-[2rem] border border-neutral-200 bg-neutral-50 p-5 shadow-[0_24px_70px_rgba(0,0,0,0.08)]"
         >
+          <div
+            className="absolute left-[-9999px] top-auto h-px w-px overflow-hidden"
+            aria-hidden="true"
+          >
+            <label htmlFor="website">Sitio web</label>
+            <input
+              id="website"
+              name="website"
+              type="text"
+              tabIndex={-1}
+              autoComplete="off"
+            />
+          </div>
           <div className="rounded-[1.5rem] border border-neutral-200 bg-white p-6">
             <div className="grid gap-5 md:grid-cols-2">
               <div>

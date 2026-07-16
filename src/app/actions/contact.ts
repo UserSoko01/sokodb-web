@@ -13,6 +13,7 @@ const contactSchema = z.object({
   privacy: z.literal("on", {
     error: "Debes aceptar el aviso de privacidad.",
   }),
+  website: z.string().optional(),
 });
 
 export type ContactFormState = {
@@ -45,6 +46,7 @@ export async function sendContactMessage(
     service: formData.get("service"),
     message: formData.get("message"),
     privacy: formData.get("privacy"),
+    website: String(formData.get("website") || ""),
   };
 
   const result = contactSchema.safeParse(rawData);
@@ -74,6 +76,13 @@ export async function sendContactMessage(
   }
 
   const data = result.data;
+  if (data.website?.trim()) {
+    return {
+      success: true,
+      message:
+      "Gracias por contactarnos. Hemos recibido tu mensaje y nuestro equipo se comunicará contigo a la brevedad."
+    };
+  }
 
   const safeName = escapeHtml(data.name);
   const safeEmail = escapeHtml(data.email);
