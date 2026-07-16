@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { FloatingWhatsAppButton } from "@/components/shared/FloatingWhatsAppButton";
 
 const inter = Inter({
   subsets:['latin'],
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <FloatingWhatsAppButton />
       </body>
     </html>
   );
