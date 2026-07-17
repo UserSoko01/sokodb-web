@@ -1,48 +1,48 @@
 import {
   BarChart3,
-  CloudUpload,
-  Gauge,
-  Headphones,
-  Puzzle,
+  GitBranch,
+  LockKeyhole,
+  RefreshCw,
+  ShieldCheck,
   Workflow,
 } from "lucide-react";
 
 const capabilities = [
   {
-    title: "Arquitectura y rendimiento",
+    title: "Continuidad operativa",
     description:
-      "Diseñamos arquitecturas tecnológicas confiables, seguras y preparadas para soportar operaciones críticas.",
-    icon: Gauge,
+      "Diseñamos soluciones orientadas a mantener la disponibilidad, estabilidad y operación continua de plataformas críticas.",
+    icon: ShieldCheck,
   },
   {
-    title: "Migración y modernización",
+    title: "Modernización tecnológica",
     description:
-      "Acompañamos procesos de actualización, migración y modernización de plataformas para mejorar estabilidad y eficiencia.",
-    icon: CloudUpload,
-  },
-  {
-    title: "Soporte y administración",
-    description:
-      "Brindamos acompañamiento técnico para mantener la continuidad, seguridad y disponibilidad de tus sistemas.",
-    icon: Headphones,
-  },
-  {
-    title: "Automatización de procesos",
-    description:
-      "Identificamos tareas repetitivas y diseñamos soluciones que reducen carga operativa y mejoran productividad.",
-    icon: Workflow,
-  },
-  {
-    title: "Analítica para decisiones",
-    description:
-      "Convertimos información dispersa en indicadores claros para tomar decisiones con mayor certeza.",
-    icon: BarChart3,
+      "Acompañamos procesos de actualización, migración y evolución de ambientes legados hacia arquitecturas más seguras y escalables.",
+    icon: RefreshCw,
   },
   {
     title: "Integración de sistemas",
     description:
-      "Conectamos plataformas, bases de datos y aplicaciones para mejorar el flujo de información entre áreas.",
-    icon: Puzzle,
+      "Conectamos aplicaciones, bases de datos, servicios y plataformas para mejorar el flujo de información entre áreas.",
+    icon: GitBranch,
+  },
+  {
+    title: "Automatización de procesos",
+    description:
+      "Identificamos tareas repetitivas o críticas y diseñamos soluciones que reducen carga operativa y aceleran la ejecución.",
+    icon: Workflow,
+  },
+  {
+    title: "Gestión y análisis de datos",
+    description:
+      "Transformamos información dispersa en indicadores, reportes y modelos útiles para mejorar la toma de decisiones.",
+    icon: BarChart3,
+  },
+  {
+    title: "Seguridad y control",
+    description:
+      "Aplicamos buenas prácticas para proteger datos, controlar accesos, reducir riesgos y fortalecer ambientes empresariales.",
+    icon: LockKeyhole,
   },
 ];
 
@@ -53,18 +53,27 @@ export function CapabilitiesSection() {
         <div className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr]">
           <div>
             <p className="text-sm font-semibold text-[#F9423A]">
-              Cómo podemos ayudarte
+              Capacidades transversales
             </p>
 
             <h2 className="mt-4 text-3xl font-black tracking-tight text-black md:text-5xl">
-              Capacidades para resolver retos tecnológicos reales
+              Tecnología para fortalecer operación, datos e infraestructura
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-neutral-600">
-              Nuestro trabajo no se limita a implementar herramientas.
-              Analizamos el contexto de tu empresa, detectamos oportunidades de
-              mejora y construimos soluciones sostenibles.
+              Más allá de cada servicio individual, SokoDB acompaña a las
+              organizaciones en retos tecnológicos integrales: continuidad,
+              modernización, seguridad, automatización, integración y mejor
+              aprovechamiento de la información.
             </p>
+
+            <div className="mt-8 rounded-3xl bg-black p-6 text-white">
+              <ShieldCheck className="h-8 w-8 text-[#F9423A]" />
+              <p className="mt-4 text-xl font-black">
+                Un enfoque integral para plataformas críticas, procesos de
+                negocio e infraestructura empresarial.
+              </p>
+            </div>
           </div>
 
           <div className="grid gap-5 md:grid-cols-2">

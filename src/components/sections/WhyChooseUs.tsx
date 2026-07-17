@@ -1,40 +1,47 @@
 import {
   BadgeCheck,
+  Handshake,
   Headphones,
   Lightbulb,
-  MessageCircle,
+  Medal,
   Target,
 } from "lucide-react";
 
 const reasons = [
   {
-    title: "Especialización real",
+    title: "Especialización técnica",
     description:
-      "Experiencia en tecnologías empresariales, bases de datos, analítica y desarrollo de software para entornos críticos.",
+      "Experiencia enfocada en plataformas de datos, integración, automatización, infraestructura y tecnologías empresariales.",
     icon: BadgeCheck,
   },
   {
     title: "Soluciones a la medida",
     description:
-      "Cada proyecto se diseña según las necesidades, presupuesto y objetivos específicos de la empresa.",
+      "Cada proyecto se adapta al contexto, objetivos, presupuesto, operación y prioridades reales de la organización.",
     icon: Target,
   },
   {
-    title: "Agilidad y comunicación",
+    title: "Alianzas y ecosistemas líderes",
     description:
-      "Trabajamos con procesos claros, comunicación constante y tiempos de respuesta eficientes.",
-    icon: MessageCircle,
+      "Trabajo con tecnologías y ecosistemas empresariales como IBM, Oracle, EDB, PostgreSQL, MuleSoft y plataformas cloud.",
+    icon: Medal,
   },
   {
-    title: "Soporte continuo",
+    title: "Atención cercana y ágil",
     description:
-      "Acompañamos a nuestros clientes antes, durante y después de cada implementación.",
+      "Comunicación directa, seguimiento constante y procesos claros para avanzar sin burocracia innecesaria.",
+    icon: Handshake,
+  },
+  {
+    title: "Soporte flexible",
+    description:
+      "Modalidades por bolsa de horas, proyecto fijo, atención remota, híbrida o en sitio, con esquemas 5×8 o 7×24.",
     icon: Headphones,
   },
   {
-    title: "Valor accesible",
+    title: "Valor competitivo",
     description:
-      "Ofrecemos soluciones tecnológicas de alto valor sin estructuras innecesariamente complejas o costosas.",
+      "Soluciones especializadas, medibles y sostenibles, con enfoque en eficiencia, continuidad y retorno operativo.",
     icon: Lightbulb,
   },
 ];
@@ -51,16 +58,17 @@ export function WhyChooseUs() {
           </p>
 
           <h2 className="mt-4 text-3xl font-black tracking-tight text-black md:text-5xl">
-            Experiencia técnica con atención cercana
+            Especialización, agilidad y soluciones enfocadas en resultados
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-neutral-600">
-            Combinamos conocimiento técnico, comunicación directa y soluciones
-            realistas para ayudar a tu empresa a operar con mayor confianza.
+            Combinamos conocimiento técnico, atención cercana y experiencia en
+            tecnologías empresariales para ayudar a tu organización a operar con
+            mayor seguridad, continuidad y eficiencia.
           </p>
         </div>
 
-        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-5">
+        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {reasons.map((reason) => {
             const Icon = reason.icon;
 
