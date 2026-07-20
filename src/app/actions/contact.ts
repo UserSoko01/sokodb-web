@@ -102,7 +102,7 @@ export async function sendContactMessage(
   });
 
   try {
-    await transporter.sendMail({
+    const info = await transporter.sendMail({
       from: fromEmail,
       to: toEmail,
       replyTo: data.email,
@@ -137,14 +137,19 @@ ${data.message}
       `,
     });
 
+    if (!info.accepted || info.accepted.length === 0){
+      return {
+        success:false,
+        message: fallbackErrorMessage,
+      }
+    }
+
     return {
       success: true,
       message:
         "Gracias por contactarnos. Hemos recibido tu mensaje y nuestro equipo se comunicará contigo a la brevedad.",
     };
-  } catch (error) {
-    console.error("SMTP contact error:", error);
-
+  } catch {
     return {
       success: false,
       message: fallbackErrorMessage,
