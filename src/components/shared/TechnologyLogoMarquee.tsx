@@ -31,6 +31,10 @@ export function TechnologyLogoMarquee() {
                 width={logo.width}
                 height={logo.height}
                 className="max-h-8 w-auto object-contain"
+                style={{
+                  width:"auto",
+                  height:"auto",
+                }}
               />
             </div>
           ))}

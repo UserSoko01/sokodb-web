@@ -160,6 +160,11 @@ export function ContactFormSection() {
                   placeholder="Cuéntanos brevemente qué necesitas resolver, mejorar o implementar."
                   className="mt-2 w-full resize-none rounded-xl border border-neutral-200 px-4 py-3 text-sm outline-none transition-colors focus:border-[#F9423A]"
                 />
+                {state.errors?.message && (
+                  <p className="mt-2 text-sm font-semibold text-red-600">
+                    {state.errors.message[0]}
+                  </p>
+                )}
               </div>
             </div>
 
