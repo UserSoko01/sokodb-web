@@ -142,10 +142,12 @@ ${data.message}
       message:
         "Gracias por contactarnos. Hemos recibido tu mensaje y nuestro equipo se comunicará contigo a la brevedad.",
     };
-  } catch {
+  } catch (error) {
+    console.error("SMTP contact error:", error);
+
     return {
       success: false,
       message: fallbackErrorMessage,
-    };
-  }
+    }
+  };
 }
