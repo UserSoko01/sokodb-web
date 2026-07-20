@@ -1,41 +1,48 @@
 import {
-  Gauge,
+  Database,
   Headphones,
-  Layers3,
+  RefreshCw,
+  Server,
   ShieldCheck,
-  Target,
+  Workflow,
 } from "lucide-react";
 
 const benefits = [
   {
-    title: "Experiencia especializada",
+    title: "Plataformas confiables",
     description:
-      "Contamos con experiencia técnica en bases de datos, desarrollo de software y soluciones empresariales para entornos críticos.",
+      "Diseñamos, implementamos y optimizamos ambientes de datos seguros, escalables y preparados para operaciones críticas.",
+    icon: Database,
+  },
+  {
+    title: "Continuidad operativa",
+    description:
+      "Acompañamos a las empresas con esquemas de soporte, monitoreo, respaldo, recuperación y atención especializada.",
     icon: ShieldCheck,
   },
   {
-    title: "Soluciones a la medida",
+    title: "Servicios administrados",
     description:
-      "Diseñamos soluciones alineadas a la operación, presupuesto y objetivos específicos de cada empresa.",
-    icon: Target,
-  },
-  {
-    title: "Agilidad operativa",
-    description:
-      "Trabajamos con procesos claros y comunicación constante para entregar soluciones eficientes sin burocracia innecesaria.",
-    icon: Gauge,
-  },
-  {
-    title: "Soporte constante",
-    description:
-      "Acompañamos a nuestros clientes antes, durante y después de cada implementación para asegurar continuidad y confianza.",
+      "Mantenemos y optimizamos plataformas mediante niveles de atención N1, N2 y N3, con modalidades flexibles.",
     icon: Headphones,
   },
   {
-    title: "Tecnología escalable",
+    title: "Modernización tecnológica",
     description:
-      "Construimos soluciones preparadas para crecer junto con tu empresa, manteniendo rendimiento, seguridad y estabilidad.",
-    icon: Layers3,
+      "Apoyamos migraciones, actualizaciones, modernización de sistemas legados e integración de plataformas empresariales.",
+    icon: RefreshCw,
+  },
+  {
+    title: "Automatización e integración",
+    description:
+      "Conectamos sistemas, automatizamos procesos y desarrollamos soluciones para reducir carga operativa y acelerar resultados.",
+    icon: Workflow,
+  },
+  {
+    title: "Infraestructura empresarial",
+    description:
+      "Suministramos servidores, almacenamiento, redes, conectividad y equipo de cómputo para fortalecer la operación diaria.",
+    icon: Server,
   },
 ];
 
@@ -52,19 +59,20 @@ export function BenefitsSection() {
             </p>
 
             <h2 className="mt-4 text-3xl font-black tracking-tight text-black md:text-5xl">
-              Tecnología confiable, atención cercana y resultados medibles
+              Tecnología especializada para continuidad, eficiencia y crecimiento
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-neutral-600">
-              Nuestro enfoque combina experiencia técnica, soluciones a la
-              medida y acompañamiento constante para que cada proyecto genere
-              valor real en la operación de tu empresa.
+              Nuestro enfoque combina consultoría técnica, servicios
+              administrados, integración, automatización e infraestructura para
+              que cada solución genere valor real en la operación de tu empresa.
             </p>
 
             <div className="mt-8 rounded-3xl bg-black p-6 text-white">
               <p className="text-sm text-white/60">Enfoque SokoDB</p>
               <p className="mt-2 text-2xl font-black">
-                Soluciones robustas, seguras y preparadas para escalar.
+                Soluciones seguras, escalables y listas para ambientes
+                empresariales.
               </p>
             </div>
           </div>
