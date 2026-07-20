@@ -1,12 +1,12 @@
-import { CheckCircle2, Database, Layers3 } from "lucide-react";
+import { CheckCircle2, Database, Layers3, Server } from "lucide-react";
 
 const highlights = [
-  "Consultoría experta",
-  "Soluciones a la medida",
-  "Especialistas en bases de datos",
-  "Servicio ágil y cercano",
-  "Soporte confiable",
-  "Tecnología accesible y escalable",
+  "Consultoría de Base de Datos",
+  "Servicios Administrados",
+  "Desarrollo e integración",
+  "Automatización de procesos",
+  "Data Analytics & Management",
+  "Infraestructura empresarial",
 ];
 
 export function AboutPreview() {
@@ -21,21 +21,23 @@ export function AboutPreview() {
           </p>
 
           <h2 className="mt-4 text-3xl font-black tracking-tight text-black md:text-5xl">
-            Tecnología clara, confiable y preparada para crecer con tu empresa
+            Soluciones especializadas para plataformas de datos, integración e
+            infraestructura
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-neutral-600">
-            Tu negocio necesita información confiable, procesos eficientes y
-            tecnología capaz de adaptarse a sus objetivos. En SokoDB ayudamos a
-            las empresas a modernizar su operación mediante consultoría
-            especializada, gestión avanzada de bases de datos y desarrollo de
-            software a la medida.
+            Tu organización necesita plataformas de datos confiables, procesos
+            integrados e infraestructura tecnológica capaz de sostener
+            operaciones críticas. En SokoDB ayudamos a modernizar ambientes
+            empresariales mediante consultoría especializada, servicios
+            administrados, integración tecnológica y soluciones escalables.
           </p>
 
           <p className="mt-5 text-lg leading-8 text-neutral-600">
-            Desde 2017 hemos evolucionado en el mundo de la tecnología
-            empresarial, construyendo experiencia en bases de datos, analítica,
-            soluciones corporativas y desarrollo de aplicaciones.
+            Desde 2017 hemos construido experiencia en bases de datos,
+            integración, automatización, analítica e infraestructura
+            empresarial, trabajando con tecnologías y ecosistemas líderes para
+            maximizar el valor de la información.
           </p>
 
           <div className="mt-8 grid gap-3 sm:grid-cols-2">
@@ -77,11 +79,12 @@ export function AboutPreview() {
 
                     <div>
                       <h4 className="font-bold text-black">
-                        Bases de datos críticas
+                        Plataformas de datos críticas
                       </h4>
                       <p className="mt-1 text-sm leading-6 text-neutral-600">
-                        Administración, optimización, seguridad y continuidad
-                        para entornos empresariales.
+                        Implementación, migraciones, alta disponibilidad,
+                        respaldo, monitoreo, performance tuning y análisis de
+                        capacidad.
                       </p>
                     </div>
                   </div>
@@ -95,11 +98,11 @@ export function AboutPreview() {
 
                     <div>
                       <h4 className="font-bold text-black">
-                        Software a la medida
+                        Integración y automatización
                       </h4>
                       <p className="mt-1 text-sm leading-6 text-neutral-600">
-                        Aplicaciones diseñadas para mejorar procesos, integrar
-                        áreas y escalar con la operación.
+                        APIs, microservicios, automatización de procesos CORE,
+                        integración de sistemas y soluciones con IA empresarial.
                       </p>
                     </div>
                   </div>
@@ -108,16 +111,16 @@ export function AboutPreview() {
                 <div className="rounded-2xl border border-neutral-200 bg-neutral-50 p-5">
                   <div className="flex items-start gap-4">
                     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-neutral-900 text-white">
-                      <CheckCircle2 className="h-5 w-5" />
+                      <Server className="h-5 w-5" />
                     </div>
 
                     <div>
                       <h4 className="font-bold text-black">
-                        Acompañamiento experto
+                        Infraestructura empresarial
                       </h4>
                       <p className="mt-1 text-sm leading-6 text-neutral-600">
-                        Atención cercana, comunicación clara y soporte durante
-                        todo el ciclo del proyecto.
+                        Servidores, almacenamiento, redes, conectividad y equipo
+                        de cómputo para fortalecer la operación tecnológica.
                       </p>
                     </div>
                   </div>
@@ -127,7 +130,8 @@ export function AboutPreview() {
               <div className="mt-6 rounded-2xl bg-black p-5 text-white">
                 <p className="text-sm text-white/65">Enfoque principal</p>
                 <p className="mt-2 text-xl font-black">
-                  Soluciones robustas, seguras y escalables.
+                  Datos, integración, automatización e infraestructura para
+                  empresas que necesitan operar mejor.
                 </p>
               </div>
             </div>
