@@ -13,7 +13,7 @@ import { EnterpriseEquipmentSection } from "@/components/sections/EnterpriseEqui
 export const metadata: Metadata = {
   title: "Servicios",
   description:
-    "Servicios especializados de SokoDB en bases de datos, analítica, soluciones empresariales y desarrollo de software a la medida.",
+    "Servicios especializados de SokoDB en consultoría de base de datos, servicios administrados, integración, automatización, analítica e infraestructura empresarial.",
 };
 
 export default function ServiciosPage() {
