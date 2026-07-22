@@ -6,14 +6,35 @@ import { socialLinks } from "@/content/social";
 import { SocialIcon } from "@/components/shared/SocialIcon";
 
 const footerServices = [
-  "Consultoría de Base de Datos",
-  "Servicios Administrados",
-  "Desarrollo, Integración y Automatización",
-  "Data Analytics & Management",
-  "Middleware, Cloud e Integración",
-  "Equipo de Cómputo Empresarial",
+  {
+    label: "Consultoría de Base de Datos",
+    href: "/servicios",
+  },
+  {
+    label: "Servicios Administrados",
+    href: "/servicios",
+  },
+  {
+    label: "Desarrollo, Integración y Automatización",
+    href: "/servicios",
+  },
+  {
+    label: "Data Analytics & Management",
+    href: "/servicios",
+  },
+  {
+    label: "Middleware, Cloud e Integración",
+    href: "/servicios",
+  },
+  {
+    label: "Equipo de Cómputo Empresarial",
+    href: "/servicios",
+  },
+  {
+    label: "Aviso de privacidad",
+    href: "/aviso-de-privacidad",
+  },
 ];
-
 export function Footer() {
   return (
     <footer className="bg-black text-white">
@@ -71,9 +92,9 @@ export function Footer() {
 
           <ul className="mt-4 space-y-3 text-sm text-white/65">
             {footerServices.map((service) => (
-              <li key={service}>
-                <Link href="/servicios" className="hover:text-[#F9423A]">
-                  {service}
+              <li key={service.label}>
+                <Link href={service.href} className="hover:text-[#F9423A]">
+                  {service.label}
                 </Link>
               </li>
             ))}
