@@ -149,10 +149,12 @@ ${data.message}
       message:
         "Gracias por contactarnos. Hemos recibido tu mensaje y nuestro equipo se comunicará contigo a la brevedad.",
     };
-  } catch {
+  } catch (error) {
+    console.log("Error SMTP del formulario:", error);
+
     return {
-      success: false,
+      success:false,
       message: fallbackErrorMessage,
-    }
-  };
+    };
+  }
 }
