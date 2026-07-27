@@ -101,6 +101,22 @@ export async function sendContactMessage(
     passLength: smtpPass?.length ?? 0,
   });
 
+  const rawPass = process.env.SMTP_PASS ?? "";
+
+console.log("Diagnóstico SMTP_PASS:", {
+  length: rawPass.length,
+  trimmedLength: rawPass.trim().length,
+  startsDoubleQuote: rawPass.startsWith('"'),
+  endsDoubleQuote: rawPass.endsWith('"'),
+  startsSingleQuote: rawPass.startsWith("'"),
+  endsSingleQuote: rawPass.endsWith("'"),
+  hasSpaceAtStart: rawPass.startsWith(" "),
+  hasSpaceAtEnd: rawPass.endsWith(" "),
+  hasLineFeed: rawPass.includes("\n"),
+  hasCarriageReturn: rawPass.includes("\r"),
+  hasTab: rawPass.includes("\t"),
+});
+
   const transporter = nodemailer.createTransport({
     host: smtpHost,
     port: smtpPort,
