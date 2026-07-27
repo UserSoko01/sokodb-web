@@ -92,30 +92,19 @@ export async function sendContactMessage(
   const safeMessage = escapeHtml(data.message).replaceAll("\n", "<br />");
 
 
-  console.log("Verificación SMTP:", {
-    host: smtpHost,
-    port: smtpPort,
-    secure: smtpSecure,
-    user: smtpUser,
-    passPresent: Boolean(smtpPass),
-    passLength: smtpPass?.length ?? 0,
-  });
-
   const rawPass = process.env.SMTP_PASS ?? "";
 
-console.log("Diagnóstico SMTP_PASS:", {
-  length: rawPass.length,
-  trimmedLength: rawPass.trim().length,
-  startsDoubleQuote: rawPass.startsWith('"'),
-  endsDoubleQuote: rawPass.endsWith('"'),
-  startsSingleQuote: rawPass.startsWith("'"),
-  endsSingleQuote: rawPass.endsWith("'"),
-  hasSpaceAtStart: rawPass.startsWith(" "),
-  hasSpaceAtEnd: rawPass.endsWith(" "),
-  hasLineFeed: rawPass.includes("\n"),
-  hasCarriageReturn: rawPass.includes("\r"),
-  hasTab: rawPass.includes("\t"),
-});
+  console.log("Análisis seguro SMTP_PASS:", {
+    utf16Length: rawPass.length,
+    codePointLength: Array.from(rawPass).length,
+    utf8ByteLength: Buffer.byteLength(rawPass, "utf8"),
+    nonAsciiCount: Array.from(rawPass).filter(
+      (character) => character.codePointAt(0)! > 127
+    ).length,
+    hasZeroWidthCharacter: /[\u200B-\u200D\uFEFF]/u.test(rawPass),
+    hasNonBreakingSpace: rawPass.includes("\u00A0"),
+    hasControlCharacter: /[\u0000-\u001F\u007F]/u.test(rawPass),
+  });
 
   const transporter = nodemailer.createTransport({
     host: smtpHost,
