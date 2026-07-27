@@ -3,7 +3,7 @@ import { ArrowRight, Database, ShieldCheck, Users } from "lucide-react";
 
 const metrics = [
   {
-    value: "2017",
+    value: "2021",
     label: "trayectoria en tecnología empresarial",
   },
   {
@@ -39,7 +39,7 @@ export function AboutHero() {
           </p>
 
           <p className="mt-4 max-w-2xl text-lg leading-8 text-neutral-600">
-            Desde 2017 combinamos experiencia técnica, atención cercana y alianzas
+            Desde 2021 combinamos experiencia técnica, atención cercana y alianzas
             estratégicas con líderes tecnológicos como IBM, Oracle y EDB para entregar
             soluciones alineadas a las necesidades reales de cada organización.
           </p>

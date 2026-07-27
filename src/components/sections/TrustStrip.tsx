@@ -3,7 +3,7 @@ import { TechnologyLogoMarquee } from "@/components/shared/TechnologyLogoMarquee
 
 const trustItems = [
   {
-    title: "Experiencia desde 2017",
+    title: "Experiencia desde 2021",
     description: "Trayectoria en soluciones tecnológicas empresariales.",
     icon: BadgeCheck,
   },

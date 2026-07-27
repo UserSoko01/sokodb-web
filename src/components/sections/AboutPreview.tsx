@@ -34,7 +34,7 @@ export function AboutPreview() {
           </p>
 
           <p className="mt-5 text-lg leading-8 text-neutral-600">
-            Desde 2017 hemos construido experiencia en bases de datos,
+            Desde 2021 hemos construido experiencia en bases de datos,
             integración, automatización, analítica e infraestructura
             empresarial, trabajando con tecnologías y ecosistemas líderes para
             maximizar el valor de la información.
