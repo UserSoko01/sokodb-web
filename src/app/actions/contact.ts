@@ -91,6 +91,16 @@ export async function sendContactMessage(
   const safeService = escapeHtml(data.service);
   const safeMessage = escapeHtml(data.message).replaceAll("\n", "<br />");
 
+
+  console.log("Verificación SMTP:", {
+    host: smtpHost,
+    port: smtpPort,
+    secure: smtpSecure,
+    user: smtpUser,
+    passPresent: Boolean(smtpPass),
+    passLength: smtpPass?.length ?? 0,
+  });
+
   const transporter = nodemailer.createTransport({
     host: smtpHost,
     port: smtpPort,
