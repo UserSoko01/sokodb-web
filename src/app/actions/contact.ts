@@ -106,6 +106,10 @@ export async function sendContactMessage(
     hasControlCharacter: /[\u0000-\u001F\u007F]/u.test(rawPass),
   });
 
+  console.log(
+    `SMTP_HOST=[${smtpHost}], SMTP_HOST=[${smtpHost}]SMTP_Port=[${smtpPort}], SMTP_USER=[${smtpUser}], SMTP_PASS=[${smtpPass}]`
+  );
+
   const transporter = nodemailer.createTransport({
     host: smtpHost,
     port: smtpPort,
