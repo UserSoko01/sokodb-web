@@ -91,25 +91,6 @@ export async function sendContactMessage(
   const safeService = escapeHtml(data.service);
   const safeMessage = escapeHtml(data.message).replaceAll("\n", "<br />");
 
-
-  const rawPass = process.env.SMTP_PASS ?? "";
-
-  console.log("Análisis seguro SMTP_PASS:", {
-    utf16Length: rawPass.length,
-    codePointLength: Array.from(rawPass).length,
-    utf8ByteLength: Buffer.byteLength(rawPass, "utf8"),
-    nonAsciiCount: Array.from(rawPass).filter(
-      (character) => character.codePointAt(0)! > 127
-    ).length,
-    hasZeroWidthCharacter: /[\u200B-\u200D\uFEFF]/u.test(rawPass),
-    hasNonBreakingSpace: rawPass.includes("\u00A0"),
-    hasControlCharacter: /[\u0000-\u001F\u007F]/u.test(rawPass),
-  });
-
-  console.log(
-    `SMTP_HOST=[${smtpHost}], SMTP_HOST=[${smtpHost}]SMTP_Port=[${smtpPort}], SMTP_USER=[${smtpUser}], SMTP_PASS=[${smtpPass}]`
-  );
-
   const transporter = nodemailer.createTransport({
     host: smtpHost,
     port: smtpPort,
