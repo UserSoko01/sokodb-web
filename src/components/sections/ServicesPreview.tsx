@@ -24,14 +24,22 @@ export function ServicesPreview() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-          {services.map((service) => (
-            <ServiceCard
+        <div className="mt-14 grid items-start gap-5 md:grid-cols-2 lg:grid-cols-12">
+          {services.map((service, index) => (
+            <div
               key={service.title}
-              title={service.title}
-              description={service.description}
-              icon={service.icon}
-            />
+              className={
+                index < 4
+                  ? "lg:col-span-3"
+                  : "lg:col-span-4"
+              }
+            >
+              <ServiceCard
+                title={service.title}
+                description={service.description}
+                icon={service.icon}
+              />
+            </div>
           ))}
         </div>
 
