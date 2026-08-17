@@ -70,61 +70,72 @@ export function AboutPreview() {
                 </div>
               </div>
 
-              <div className="mt-6 grid gap-4">
-                <div className="rounded-2xl border border-neutral-200 bg-neutral-50 p-5">
+              <div className="mt-6 grid items-start gap-4">
+                <article
+                  tabIndex={0}
+                  className="group h-fit cursor-default rounded-2xl border border-neutral-200 bg-neutral-50 p-5 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-[#F9423A]/40 hover:shadow-[0_18px_40px_rgba(0,0,0,0.06)] focus-visible:border-[#F9423A]/50 focus-visible:ring-2 focus-visible:ring-[#F9423A]/20"
+                >
                   <div className="flex items-start gap-4">
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-black text-white">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-black text-white transition-colors duration-300 group-hover:bg-[#F9423A] group-focus-visible:bg-[#F9423A]">
                       <Database className="h-5 w-5" />
                     </div>
 
-                    <div>
+                    <div className="min-w-0">
                       <h4 className="font-bold text-black">
                         Plataformas de datos críticas
                       </h4>
-                      <p className="mt-1 text-sm leading-6 text-neutral-600">
-                        Implementación, migraciones, alta disponibilidad,
-                        respaldo, monitoreo, performance tuning y análisis de
-                        capacidad.
+
+                      <p className="mt-3 max-h-32 overflow-hidden text-sm leading-6 text-neutral-600 opacity-100 transition-all duration-300 sm:mt-0 sm:max-h-0 sm:opacity-0 sm:group-hover:mt-3 sm:group-hover:max-h-32 sm:group-hover:opacity-100 sm:group-focus-visible:mt-3 sm:group-focus-visible:max-h-32 sm:group-focus-visible:opacity-100">
+                        Implementación, migraciones, alta disponibilidad, respaldo,
+                        monitoreo, performance tuning y análisis de capacidad.
                       </p>
                     </div>
                   </div>
-                </div>
+                </article>
 
-                <div className="rounded-2xl border border-neutral-200 bg-neutral-50 p-5">
+                <article
+                  tabIndex={0}
+                  className="group h-fit cursor-default rounded-2xl border border-neutral-200 bg-neutral-50 p-5 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-[#F9423A]/40 hover:shadow-[0_18px_40px_rgba(0,0,0,0.06)] focus-visible:border-[#F9423A]/50 focus-visible:ring-2 focus-visible:ring-[#F9423A]/20"
+                >
                   <div className="flex items-start gap-4">
                     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#F9423A] text-white">
                       <Layers3 className="h-5 w-5" />
                     </div>
 
-                    <div>
+                    <div className="min-w-0">
                       <h4 className="font-bold text-black">
                         Integración y automatización
                       </h4>
-                      <p className="mt-1 text-sm leading-6 text-neutral-600">
-                        APIs, microservicios, automatización de procesos CORE,
-                        integración de sistemas y soluciones con IA empresarial.
+
+                      <p className="mt-3 max-h-32 overflow-hidden text-sm leading-6 text-neutral-600 opacity-100 transition-all duration-300 sm:mt-0 sm:max-h-0 sm:opacity-0 sm:group-hover:mt-3 sm:group-hover:max-h-32 sm:group-hover:opacity-100 sm:group-focus-visible:mt-3 sm:group-focus-visible:max-h-32 sm:group-focus-visible:opacity-100">
+                        APIs, microservicios, automatización de procesos CORE, integración de
+                        sistemas y soluciones con IA empresarial.
                       </p>
                     </div>
                   </div>
-                </div>
+                </article>
 
-                <div className="rounded-2xl border border-neutral-200 bg-neutral-50 p-5">
+                <article
+                  tabIndex={0}
+                  className="group h-fit cursor-default rounded-2xl border border-neutral-200 bg-neutral-50 p-5 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-[#F9423A]/40 hover:shadow-[0_18px_40px_rgba(0,0,0,0.06)] focus-visible:border-[#F9423A]/50 focus-visible:ring-2 focus-visible:ring-[#F9423A]/20"
+                >
                   <div className="flex items-start gap-4">
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-neutral-900 text-white">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-neutral-900 text-white transition-colors duration-300 group-hover:bg-[#F9423A] group-focus-visible:bg-[#F9423A]">
                       <Server className="h-5 w-5" />
                     </div>
 
-                    <div>
+                    <div className="min-w-0">
                       <h4 className="font-bold text-black">
                         Infraestructura empresarial
                       </h4>
-                      <p className="mt-1 text-sm leading-6 text-neutral-600">
-                        Servidores, almacenamiento, redes, conectividad y equipo
-                        de cómputo para fortalecer la operación tecnológica.
+
+                      <p className="mt-3 max-h-32 overflow-hidden text-sm leading-6 text-neutral-600 opacity-100 transition-all duration-300 sm:mt-0 sm:max-h-0 sm:opacity-0 sm:group-hover:mt-3 sm:group-hover:max-h-32 sm:group-hover:opacity-100 sm:group-focus-visible:mt-3 sm:group-focus-visible:max-h-32 sm:group-focus-visible:opacity-100">
+                        Servidores, almacenamiento, redes, conectividad y equipo de cómputo
+                        para fortalecer la operación tecnológica.
                       </p>
                     </div>
                   </div>
-                </div>
+                </article>
               </div>
 
               <div className="mt-6 rounded-2xl bg-black p-5 text-white">

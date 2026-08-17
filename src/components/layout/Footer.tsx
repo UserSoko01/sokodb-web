@@ -107,7 +107,7 @@ export function Footer() {
           <ul className="mt-4 space-y-4 text-sm text-white/65">
             <li className="flex gap-3">
               <MapPin className="h-4 w-4 shrink-0 text-[#F9423A]" />
-              <span>Ciudad de México, México</span>
+              <span>Montecito No. 38 Piso 39 Oficina 34, Colonia Nápoles, Alcaldía Benito Juárez, México, México C.P. 03810</span>
             </li>
 
             <li className="flex gap-3">
