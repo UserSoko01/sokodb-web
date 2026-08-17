@@ -1,9 +1,4 @@
-import {
-  ClipboardList,
-  Compass,
-  Rocket,
-  Settings,
-} from "lucide-react";
+import { ClipboardList, Compass, Rocket, Settings } from "lucide-react";
 
 const processSteps = [
   {
@@ -59,22 +54,23 @@ export function ProcessSection() {
         <div className="relative mt-16">
           <div className="absolute left-1/2 top-0 hidden h-full w-px -translate-x-1/2 bg-neutral-200 lg:block" />
 
-          <div className="grid gap-6 lg:grid-cols-4">
+          <div className="grid items-start gap-6 lg:grid-cols-4">
             {processSteps.map((step) => {
               const Icon = step.icon;
 
               return (
                 <article
                   key={step.title}
-                  className="relative rounded-3xl border border-neutral-200 bg-white p-6 shadow-[0_16px_40px_rgba(0,0,0,0.03)] transition-all duration-300 hover:-translate-y-1 hover:border-[#F9423A]/40 hover:shadow-[0_24px_60px_rgba(0,0,0,0.07)]"
+                  tabIndex={0}
+                  className="group relative h-fit cursor-default rounded-3xl border border-neutral-200 bg-white p-6 shadow-[0_16px_40px_rgba(0,0,0,0.03)] outline-none transition-all duration-300 hover:-translate-y-1 hover:border-[#F9423A]/40 hover:shadow-[0_24px_60px_rgba(0,0,0,0.07)] focus-visible:border-[#F9423A]/50 focus-visible:ring-2 focus-visible:ring-[#F9423A]/20"
                 >
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-black text-[#F9423A]">
                       {step.number}
                     </span>
 
-                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#F9423A]/10">
-                      <Icon className="h-6 w-6 text-[#F9423A]" />
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#F9423A]/10 transition-colors duration-300 group-hover:bg-[#F9423A] group-focus-visible:bg-[#F9423A]">
+                      <Icon className="h-6 w-6 text-[#F9423A] transition-colors duration-300 group-hover:text-white group-focus-visible:text-white" />
                     </div>
                   </div>
 
@@ -82,7 +78,7 @@ export function ProcessSection() {
                     {step.title}
                   </h3>
 
-                  <p className="mt-3 text-sm leading-7 text-neutral-600">
+                  <p className="mt-3 max-h-32 overflow-hidden text-sm leading-7 text-neutral-600 opacity-100 transition-all duration-300 sm:mt-0 sm:max-h-0 sm:opacity-0 sm:group-hover:mt-3 sm:group-hover:max-h-32 sm:group-hover:opacity-100 sm:group-focus-visible:mt-3 sm:group-focus-visible:max-h-32 sm:group-focus-visible:opacity-100">
                     {step.description}
                   </p>
                 </article>
