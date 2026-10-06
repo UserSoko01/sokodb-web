@@ -9,6 +9,8 @@ import { ManagedServicesSection } from "@/components/sections/ManagedServicesSec
 import { SupportedEnginesSection } from "@/components/sections/SupportedEnginesSection";
 import { DevelopmentAutomationSection } from "@/components/sections/DevelopmentAutomationSection"; 
 import { EnterpriseEquipmentSection } from "@/components/sections/EnterpriseEquipmentSection";
+import { HuitzoServicesDemo } from "@/components/sections/HuitzoServicesDemo";
+import { getHuitzoServicesVariant } from "@/lib/demo-variants";
 
 export const metadata: Metadata = {
   title: "Servicios",
@@ -16,10 +18,24 @@ export const metadata: Metadata = {
     "Servicios especializados de SokoDB en consultoría de base de datos, servicios administrados, integración, automatización, analítica e infraestructura empresarial.",
 };
 
-export default function ServiciosPage() {
+type ServiciosPageProps = {
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
+};
+
+export default async function ServiciosPage({
+  searchParams,
+}: ServiciosPageProps) {
+  const params = searchParams ? await searchParams : {};
+  const huitzoSectionVariant = getHuitzoServicesVariant(params.huitzoSection);
+
   return (
     <>
       <ServicesHero />
+
+      {huitzoSectionVariant ? (
+        <HuitzoServicesDemo variant={huitzoSectionVariant} />
+      ) : null}
+
       <ServicesGrid />
       <SupportedEnginesSection />
       <ManagedServicesSection />
