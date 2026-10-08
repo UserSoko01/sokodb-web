@@ -35,4 +35,10 @@ export const technologyLogos = [
     width: 118,
     height: 32,
   },
+  {
+    name: "Huitzo",
+    src: "/brand/huitzo/icon.png",
+    width: 50,
+    height: 50,
+  },
 ];
