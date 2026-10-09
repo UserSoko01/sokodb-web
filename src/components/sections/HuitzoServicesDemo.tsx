@@ -345,18 +345,14 @@ function HuitzoServicesDark() {
       <div className="mx-auto max-w-7xl px-6 py-24">
         <div className="grid items-center gap-12 lg:grid-cols-[1fr_0.9fr]">
           <div>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-4">
               <Image
                 src="/brand/huitzo/icon.png"
-                alt=""
-                width={24}
-                height={24}
-                className="h-6 w-6 object-contain"
+                alt="Huitzo icon"
+                width={50}
+                height={50}
+                className="h-20 w-20 object-contain"
               />
-
-              <p className="text-xs font-bold uppercase tracking-tight text-[#F9423A]">
-                SokoDB × Huitzo
-              </p>
             </div>
 
             <h2 className="mt-5 text-4xl font-black leading-tight tracking-tight text-white md:text-5xl">
