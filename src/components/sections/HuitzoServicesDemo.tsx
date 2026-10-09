@@ -131,7 +131,7 @@ const deploymentOptions: IconItem[] = [
 
 function HuitzoServicesDark() {
   return (
-    <section className="bg-[#141517]">
+    <section id="huitzo-services" className="scroll-mt-24 bg-[#141517]">
       <div className="mx-auto max-w-7xl px-6 py-24">
         <div className="grid items-center gap-12 lg:grid-cols-[1fr_0.9fr]">
           <div>

@@ -55,7 +55,7 @@ function HuitzoHomeCtaDark() {
             </Link>
 
             <Link
-              href="/servicios?huitzoSection=b"
+              href="/servicios#huitzo-services"
               className="inline-flex h-14 items-center justify-center rounded-2xl border border-white/70 px-7 font-semibold text-white transition-colors hover:border-[#F9423A] hover:text-[#F9423A]"
             >
               Conoce la solución
