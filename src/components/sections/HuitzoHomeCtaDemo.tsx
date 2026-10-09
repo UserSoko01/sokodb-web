@@ -121,9 +121,19 @@ function HuitzoHomeCtaDark() {
     <section className="bg-[#141517]">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-24 lg:grid-cols-[1fr_0.9fr]">
         <div>
-          <p className="text-xs font-bold uppercase tracking-tight text-[#F9423A]">
-            SokoDB × Huitzo
-          </p>
+          <div className="flex items-center gap-3">
+            <Image
+              src="/brand/huitzo/icon.png"
+              alt=""
+              width={24}
+              height={24}
+              className="h-6 w-6 object-contain"
+            />
+
+            <p className="text-xs font-bold uppercase tracking-tight text-[#F9423A]">
+              SokoDB × Huitzo
+            </p>
+          </div>
 
           <h2 className="mt-6 max-w-3xl text-4xl font-black leading-tight tracking-tight text-white md:text-6xl">
             Tus procesos. <br />
@@ -140,7 +150,7 @@ function HuitzoHomeCtaDark() {
               href="/contacto"
               className="inline-flex h-14 items-center justify-center rounded-2xl bg-[#F9423A] px-7 font-semibold text-white transition-colors hover:bg-[#D92E27]"
             >
-              Cuéntanos tu caso de uso ↗
+              Cuéntanos tus necesidades ↗
             </Link>
 
             <Link
