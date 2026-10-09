@@ -6,26 +6,14 @@ import { BenefitsSection } from "@/components/sections/BenefitsSection";
 import { ProcessSection } from "@/components/sections/ProcessSection";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { HuitzoHomeCtaDemo } from "@/components/sections/HuitzoHomeCtaDemo";
-import { getHuitzoHomeCtaVariant } from "@/lib/demo-variants";
 
-type HomePageProps = {
-  searchParams?: Promise<Record<string, string | string[] | undefined>>;
-};
-
-export default async function HomePage({ searchParams }: HomePageProps) {
-  const params = searchParams ? await searchParams : {};
-  const huitzoCtaVariant = getHuitzoHomeCtaVariant(params.huitzoCta);
-
+export default function HomePage() {
   return (
     <>
       <HomeHero />
       <TrustStrip />
       <AboutPreview />
-
-      {huitzoCtaVariant ? (
-        <HuitzoHomeCtaDemo variant={huitzoCtaVariant} />
-      ) : null}
-
+      <HuitzoHomeCtaDemo />
       <ServicesPreview />
       <BenefitsSection />
       <ProcessSection />
