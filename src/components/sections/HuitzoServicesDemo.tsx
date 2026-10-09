@@ -197,14 +197,15 @@ function HuitzoServicesDark() {
           </div>
         </div>
 
-        <div className="mt-20 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-20 grid items-start gap-5 md:grid-cols-2 lg:grid-cols-4">
           {problemItems.map((item) => {
             const Icon = item.icon;
 
             return (
               <article
                 key={item.title}
-                className="rounded-3xl border border-white/10 bg-white/[0.03] p-6"
+                tabIndex={0}
+                className="group h-fit cursor-default rounded-3xl border border-white/10 bg-white/[0.03] p-6 outline-none transition-all duration-300 hover:-translate-y-1 hover:border-[#F9423A]/40 hover:bg-white/[0.05] focus-visible:border-[#F9423A]/50 focus-visible:ring-2 focus-visible:ring-[#F9423A]/20"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#F9423A]/15">
                   <Icon className="h-6 w-6 text-[#F9423A]" />
@@ -214,7 +215,7 @@ function HuitzoServicesDark() {
                   {item.title}
                 </h3>
 
-                <p className="mt-3 text-sm leading-7 text-white/65">
+                <p className="mt-3 max-h-40 overflow-hidden text-sm leading-7 text-white/65 opacity-100 transition-all duration-300 sm:mt-0 sm:max-h-0 sm:opacity-0 sm:group-hover:mt-3 sm:group-hover:max-h-40 sm:group-hover:opacity-100 sm:group-focus-visible:mt-3 sm:group-focus-visible:max-h-40 sm:group-focus-visible:opacity-100">
                   {item.description}
                 </p>
               </article>
